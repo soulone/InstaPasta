@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9E83FF8BFA77CE36A40C6FD7 /* Pods_InstaPost.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8334CD5C7AA439AAA3581E9F /* Pods_InstaPost.framework */; };
+		FD6231372385A58400A2E564 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FD6231362385A58400A2E564 /* GoogleService-Info.plist */; };
 		FD7776B02385A477008F4628 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7776AF2385A477008F4628 /* AppDelegate.swift */; };
 		FD7776B22385A477008F4628 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7776B12385A477008F4628 /* SceneDelegate.swift */; };
 		FD7776B42385A477008F4628 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7776B32385A477008F4628 /* ViewController.swift */; };
@@ -17,6 +19,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		66D8D512CAA3DE18C67FEA71 /* Pods-InstaPost.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaPost.debug.xcconfig"; path = "Target Support Files/Pods-InstaPost/Pods-InstaPost.debug.xcconfig"; sourceTree = "<group>"; };
+		8334CD5C7AA439AAA3581E9F /* Pods_InstaPost.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstaPost.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		94B059B4DFBF75DB1C1FA1BC /* Pods-InstaPost.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaPost.release.xcconfig"; path = "Target Support Files/Pods-InstaPost/Pods-InstaPost.release.xcconfig"; sourceTree = "<group>"; };
+		FD6231362385A58400A2E564 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FD7776AC2385A477008F4628 /* InstaPost.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstaPost.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD7776AF2385A477008F4628 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FD7776B12385A477008F4628 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -33,17 +39,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E83FF8BFA77CE36A40C6FD7 /* Pods_InstaPost.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		518D4932E1EEC87E6DEBD0B5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				66D8D512CAA3DE18C67FEA71 /* Pods-InstaPost.debug.xcconfig */,
+				94B059B4DFBF75DB1C1FA1BC /* Pods-InstaPost.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F9015024DC553C6464B936BB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8334CD5C7AA439AAA3581E9F /* Pods_InstaPost.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FD7776A32385A477008F4628 = {
 			isa = PBXGroup;
 			children = (
 				FD7776AE2385A477008F4628 /* InstaPost */,
 				FD7776AD2385A477008F4628 /* Products */,
+				518D4932E1EEC87E6DEBD0B5 /* Pods */,
+				F9015024DC553C6464B936BB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -66,6 +92,7 @@
 				FD7776BD2385A479008F4628 /* LaunchScreen.storyboard */,
 				FD7776C02385A479008F4628 /* Info.plist */,
 				FD7776B82385A477008F4628 /* InstaPost.xcdatamodeld */,
+				FD6231362385A58400A2E564 /* GoogleService-Info.plist */,
 			);
 			path = InstaPost;
 			sourceTree = "<group>";
@@ -77,9 +104,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FD7776C32385A479008F4628 /* Build configuration list for PBXNativeTarget "InstaPost" */;
 			buildPhases = (
+				26C4D34E8363A250778048DD /* [CP] Check Pods Manifest.lock */,
 				FD7776A82385A477008F4628 /* Sources */,
 				FD7776A92385A477008F4628 /* Frameworks */,
 				FD7776AA2385A477008F4628 /* Resources */,
+				50A074346303A92CBD1F5370 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,12 +158,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				FD7776BF2385A479008F4628 /* LaunchScreen.storyboard in Resources */,
+				FD6231372385A58400A2E564 /* GoogleService-Info.plist in Resources */,
 				FD7776BC2385A479008F4628 /* Assets.xcassets in Resources */,
 				FD7776B72385A477008F4628 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		26C4D34E8363A250778048DD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-InstaPost-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		50A074346303A92CBD1F5370 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InstaPost/Pods-InstaPost-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InstaPost/Pods-InstaPost-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-InstaPost/Pods-InstaPost-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FD7776A82385A477008F4628 /* Sources */ = {
@@ -286,6 +358,7 @@
 		};
 		FD7776C42385A479008F4628 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 66D8D512CAA3DE18C67FEA71 /* Pods-InstaPost.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -304,6 +377,7 @@
 		};
 		FD7776C52385A479008F4628 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94B059B4DFBF75DB1C1FA1BC /* Pods-InstaPost.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
