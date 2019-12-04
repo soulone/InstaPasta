@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		9E83FF8BFA77CE36A40C6FD7 /* Pods_InstaPost.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8334CD5C7AA439AAA3581E9F /* Pods_InstaPost.framework */; };
 		FD6231372385A58400A2E564 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FD6231362385A58400A2E564 /* GoogleService-Info.plist */; };
+		FD6CAD2123981B55007348F3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6CAD2023981B55007348F3 /* LoginViewController.swift */; };
 		FD7776B02385A477008F4628 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7776AF2385A477008F4628 /* AppDelegate.swift */; };
 		FD7776B22385A477008F4628 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7776B12385A477008F4628 /* SceneDelegate.swift */; };
 		FD7776B42385A477008F4628 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7776B32385A477008F4628 /* ViewController.swift */; };
@@ -23,6 +24,7 @@
 		8334CD5C7AA439AAA3581E9F /* Pods_InstaPost.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstaPost.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		94B059B4DFBF75DB1C1FA1BC /* Pods-InstaPost.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaPost.release.xcconfig"; path = "Target Support Files/Pods-InstaPost/Pods-InstaPost.release.xcconfig"; sourceTree = "<group>"; };
 		FD6231362385A58400A2E564 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FD6CAD2023981B55007348F3 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		FD7776AC2385A477008F4628 /* InstaPost.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstaPost.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD7776AF2385A477008F4628 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FD7776B12385A477008F4628 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 				FD7776C02385A479008F4628 /* Info.plist */,
 				FD7776B82385A477008F4628 /* InstaPost.xcdatamodeld */,
 				FD6231362385A58400A2E564 /* GoogleService-Info.plist */,
+				FD6CAD2023981B55007348F3 /* LoginViewController.swift */,
 			);
 			path = InstaPost;
 			sourceTree = "<group>";
@@ -216,6 +219,7 @@
 				FD7776B42385A477008F4628 /* ViewController.swift in Sources */,
 				FD7776B02385A477008F4628 /* AppDelegate.swift in Sources */,
 				FD7776B22385A477008F4628 /* SceneDelegate.swift in Sources */,
+				FD6CAD2123981B55007348F3 /* LoginViewController.swift in Sources */,
 				FD7776BA2385A477008F4628 /* InstaPost.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
